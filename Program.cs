@@ -24,8 +24,12 @@ player1.Play(large);
 
 Console.WriteLine("-------------------");
 
+// add SmackTalkingPlayer
+Player smackTalkingPlayer = new SmackTalkingPlayer();
+smackTalkingPlayer.Name = "Smart Ass";
+
 List<Player> players = new List<Player>() {
-    player1, player2, player3, large
+    player1, player2, player3, large, smackTalkingPlayer
 };
 
 PlayMany(players);
@@ -53,7 +57,7 @@ static void PlayMany(List<Player> players)
     {
         Console.WriteLine("-------------------");
 
-        // Make adjacent players play noe another
+        // Make adjacent players play one another
         Player player1 = shuffledPlayers[i];
         Player player2 = shuffledPlayers[i + 1];
         player1.Play(player2);
