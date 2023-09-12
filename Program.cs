@@ -43,8 +43,11 @@ soreLoser.Name = "Sore Loser";
 Player upperHalf = new UpperHalfPlayer();
 upperHalf.Name = "Upper Half";
 
+Player soreLoserUpperHalf = new SoreLoserUpperHalfPlayer();
+soreLoserUpperHalf.Name = "Sore Loser Upper Half";
+
 List<Player> players = new List<Player>() {
-    player1, player2, player3, large, smackTalkingPlayer, oneHigherPlayer, humanPlayer, creativeSmackTalker, soreLoser, upperHalf
+    player1, player2, player3, large, smackTalkingPlayer, oneHigherPlayer, humanPlayer, creativeSmackTalker, soreLoser, upperHalf, soreLoserUpperHalf
 };
 
 PlayMany(players);
