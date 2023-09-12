@@ -31,8 +31,11 @@ smackTalkingPlayer.Name = "Smack Talker";
 Player oneHigherPlayer = new OneHigherPlayer();
 oneHigherPlayer.Name = "One Higher";
 
+Player humanPlayer = new HumanPlayer();
+humanPlayer.Name = "Human";
+
 List<Player> players = new List<Player>() {
-    player1, player2, player3, large, smackTalkingPlayer, oneHigherPlayer
+    player1, player2, player3, large, smackTalkingPlayer, oneHigherPlayer, humanPlayer
 };
 
 PlayMany(players);
