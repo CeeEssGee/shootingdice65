@@ -26,10 +26,13 @@ Console.WriteLine("-------------------");
 
 // add SmackTalkingPlayer
 Player smackTalkingPlayer = new SmackTalkingPlayer();
-smackTalkingPlayer.Name = "Smart Ass";
+smackTalkingPlayer.Name = "Smack Talker";
+
+Player oneHigherPlayer = new OneHigherPlayer();
+oneHigherPlayer.Name = "One Higher";
 
 List<Player> players = new List<Player>() {
-    player1, player2, player3, large, smackTalkingPlayer
+    player1, player2, player3, large, smackTalkingPlayer, oneHigherPlayer
 };
 
 PlayMany(players);
